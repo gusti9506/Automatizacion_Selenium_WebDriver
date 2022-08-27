@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	  <!-- Aca hacemos el test en Chrome -->
+	  <test name="TestEnChromeIrContactanos">
+	  <!-- Con "parameter" elegimos el parametro creado en el Laboratorio_6
+	  y se asigna "Chrome" en value, y no importa el uso de minusculas o 
+	  mayusculas, ya que se uso el metodo "equalsIgnoreCase" -->
+	  	<parameter name="navegador" value="Chrome"/>
+	    <classes>
+	      <!-- <class name="Edit.EduxacionIT.Desafio_1"/>
+	      <class name="Edit.EduxacionIT.AppTest"/>
+	      <class name="Edit.EduxacionIT.Laboratorio_2"/>
+	      <class name="Edit.EduxacionIT.Laboratorio_3"/>-->
+	      <class name="Desafios_practicas.Laboratorio_6">
+	      <!-- Con <methods> ejecutamos solo un test o un metodo del archivo java
+	          <methods>
+			  	  <include name="irAContactanos"></include>
+		      </methods>-->
+		  </class>
+	  	</classes>
+	  </test> <!-- Test -->
+	  <!-- Aca lo mismo que en linea 5 y 8, pero en Firefox. -->
+	  <test name="TestEnFfoxIrContactanos">
+		 <parameter name="navegador" value="firefoX"/>
+		  	<classes>
+			<!-- <class name="Edit.EduxacionIT.Desafio_1"/>
+			<class name="Edit.EduxacionIT.AppTest"/>
+			<class name="Edit.EduxacionIT.Laboratorio_2"/>
+			<class name="Edit.EduxacionIT.Laboratorio_3"/>-->
+			  <class name="Desafios_practicas.Laboratorio_6">
+				<!-- Con <methods> ejecutamos solo un test o un metodo del archivo java
+					<methods>
+						<include name="irAContactanos"></include>
+					</methods>-->
+			  </class>
+		    </classes>
+		</test>
+</suite> <!-- Suite -->

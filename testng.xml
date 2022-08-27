@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Desafios_practicas.Laboratorio_3"/>
+      <class name="Desafios_practicas.Laboratorio_6b"/>
+      <class name="Desafios_practicas.Laboratorio_2"/>
+      <class name="Desafios_practicas.Laboratorio_clase5"/>
+      <class name="Desafios_practicas.Desafio_1"/>
+      <class name="Desafios_practicas.Laboratorio_6"/>
+      <class name="ScripsTests.TestExcellScripts"/>
+      <!-- Con <methods> ejecutamos solo un test o un metodo del archivo java
+          <methods>
+		  	  <include name="irAContactanos"></include>
+	      </methods>-->      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
